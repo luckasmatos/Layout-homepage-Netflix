@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,26 +8,36 @@
     <link rel="stylesheet" href="./Style.css">
     <title>Netflix</title>
 </head>
+
 <body>
     <header>
-        <img id="logo-image" src="./Assets/Netflix_Logo_PMS.png">
-        <div id="div-language">
-            🌎
-            <select name="language">
-                <option value="PT-BR" selected> Português</option> 
-            </select>
+        <div id="logo-box">
+            <img id="logo-image" src="./Assets/Netflix_Logo_PMS.png">
         </div>
-        <button id="button-login">Entrar</button>
-    </header>  
+        <div id="buttons-header-box">
+            <div id="div-language">
+                🌎
+                <select id="select" name="language">
+                    <option value="PT">Português</option>
+                    <option value="EN">Inglês</option>
+                </select>
+            </div>
+            <button id="button-login"></button>
+        </div>
+    </header>
     <main>
-        <h1>Filmes, séries e muito mais. Sem limites.</h1>
-        <h2>Assista onde quiser. Cancele quando quiser.</h2>
-        <p>Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
-        <div id="div-email">
-            <input type="email" name="input1" value="" id="input-email" autocomplete="email">
-            <label for="input-email">Email</label>
-            <button id="button-signup">Vamos lá ></button>
+        <h1 id="h1"></h1>
+        <h2 id="h2"></h2>
+        <p id="p"></p>
+        <div id="div-geral">
+            <div id="div-email">
+                <input type="email" name="input1" value="" id="input-email">
+                <label for="input-email" id="label-email"></label>
+            </div>
+                <button id="button-signup"></button>           
         </div>
-    </main> 
+    </main>
 </body>
+<script src="./script.js"></script>
+
 </html>

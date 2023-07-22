@@ -1,169 +1,181 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
+    color: #fff;
 }
 
-body{
+body {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.8) 100%), url(Assets/Background.jpg);   
     width: 100%;
     height: 100vh;
     background-size:cover;
 }
 
+header {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo-box {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #logo-image{
-    width: 276px;
-    height: 114px;
-    position: absolute;
-    top: 16px;
-    left: 220px;
+    width: auto;
+    height: 100%;
 }
 
-#div-language{
-    width: 220px;
-    height: 46px;
+#buttons-header-box {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+
+#div-language {
+    width: 160px;
+    height: 36px;
     border: 1.5px solid #616161;
-    border-radius: 6px;
-    position: absolute;
-    top: 50px;
-    right: 425px;
-    font-size: 25px;
-    line-height: 46px;
-    padding: auto 0;
-    padding-left: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 36px;
+    padding-left: 8px;
+    position: relative;
+    overflow: hidden;
 }
 
-select{
-    font-size: 26px;
-    line-height: 26px;
-    font-weight: 400;
-    color: #FFFFFF;
-    padding: auto 0;
+select {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    font-size: 16px;
     border: none;
-    background: transparent;
     outline: none;
     cursor: pointer;
+    padding-left: 40px;
 }
 
-#button-login{
-    width: 140px;
-    height: 46px;
+option {
+    background-color: #000;
+}
+
+#button-login {
+    width: 90px;
+    height: 36px;
     background: #D6000F;
-    border-radius: 6px;
+    border-radius: 5px;
     border: none;
-    position: absolute;
-    right: 270px;
-    top: 50px;
-    font-size: 26px;
+    font-size: 16px;
     line-height: 26px;
     font-weight: 400;
-    color: #FFFFFF;
     cursor: pointer;
 }
 
-#button-login:hover{
+#button-login:hover {
     background: #bd030f;
 }
 
-#button-login:active{
+#button-login:active {
     background: #99020c;
 }
 
 main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10vh;
+}
+
+h1 {
     width: 80%;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-h1{
-    width: 100%;
-    font-size: 75px;
+    font-size: 40px;
     font-weight: 900;
-    line-height: 92px;
     text-align: center;
-    color: #FFFFFF;
 }
 
-h2{
-    width: 100%;
-    font-size: 38px;
-    line-height: 49px;
-    font-weight: 600;
-    text-align: center;
-    color: #FFFFFF;
-    margin: 52px auto;
-}
-
-p{
-    font-size: 29px;
-    line-height: 38px;
+h2 {
+    width: 80%;
+    font-size: 22px;
     font-weight: 400;
     text-align: center;
-    color: #FFFFFF;
-    margin-bottom: 25px;
+    margin: 5vh 0;
+}
+
+p {
+    width: 80%;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#div-geral {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    margin-top: 5vh;
 }
 
 #div-email{
+    width: 400px;
+    height: 10vh;
+    border: 1px solid #616161;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
     position: relative;
-    text-align: center;
-    width:fit-content;
-    margin: 0 auto;
 }
 
-#input-email{
-    width: 645px;
-    height: 82px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: 1px solid #616161;
-    border-radius: 10px;
-    font-size: 25px;
-    line-height: 30px;
-    color: #FFFFFF;
+#input-email {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+    border: none;
+    appearance: none;
     outline: none;
-    display: inline-block;
-    margin-bottom: 20px;
-    cursor: text;
-    padding-left: 50px;
+    font-size: 15px;
+    padding-left: 2vw;
+    background-color: transparent;
 }
 
 label{
     position: absolute;
-    top: 17px;
-    left: 50px;
-    font-size: 25px;
-    line-height: 49px;
-    color: #FFFFFF;    
-}
-
-#input-email:focus + label{
-    top: 0;
-    font-size: 20px;
-    transition: 0.2s;
-}
-
-#input-email:focus{
-    padding-top: 30px;
-    transition: 0.2s;
+    top: 50%;
+    left: 2vw;
+    transform: translateY(-50%);
+    font-size: 22px;  
 }
 
 #button-signup{
-    width: 266px;
-    height: 82px;
+    width: 180px;
+    height: 10vh;
     background: #D6000F;
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
-    font-size: 25px;
-    line-height: 82px;
-    padding: auto auto;
-    font-weight: 400;
-    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 600;
     cursor: pointer;
-    margin-left: 5px;
 }
 
 #button-signup:hover{
@@ -172,4 +184,68 @@ label{
 
 #button-signup:active{
     background: #99020c;
+}
+
+@media screen and (max-width: 750px) {
+
+    #logo-box {
+        justify-content: start;
+    }
+
+    #div-language {
+        width: 80px;
+    }
+
+    select {
+        width: 150px;
+        left: auto;
+        right: 20%;
+        padding-left: 0;
+
+    }
+
+    #div-geral {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    #logo-image{
+        width: auto;
+        height: 60%;
+    }
+
+    main{
+        padding-top: 0;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+    
+    h2 {
+        font-size: 18px;
+    }
+    
+    p {
+        font-size: 18px;
+    }
+
+    #div-email{
+        width: 300px;
+        height: 8vh;
+    }
+
+    label{
+        font-size: 16px;  
+    }
+
+    #button-signup{
+        width: 160px;
+        height: 8vh;
+        font-size: 16px;
+        margin-top: 1vh;
+    }
+
 }
