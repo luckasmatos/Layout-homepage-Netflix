@@ -32,7 +32,7 @@ const buttonSignup = document.querySelector('#button-signup')
 changeLanguage()
 select.addEventListener('change', changeLanguage)
 
-function focusChanges() {
+function focusChange() {
 
       input.style.top = 'auto'
       input.style.bottom = '5px'
@@ -45,7 +45,7 @@ function focusChanges() {
 
   }
 
-  function blurChanges() {
+  function blurChange() {
 
     if (input.value === '') {
 
@@ -61,5 +61,5 @@ function focusChanges() {
 
   }
   
-  input.addEventListener('focus', focusChanges)
-  input.addEventListener('blur', blurChanges)
+  input.addEventListener('focus', focusChange)
+  input.addEventListener('blur', blurChange)
