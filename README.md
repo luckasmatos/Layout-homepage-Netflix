@@ -1,7 +1,7 @@
 <h2>Obrigado pela visita!</h2><br>
 <h4>Este projeto consiste no desenvolvimento da Homepage da Netflix, tendo como base o site original da Netflix Brasil.<br>
 O objetivo deste projeto foi aplicar na prática conhecimentos adquiridos em HTML, CSS e JavaScript.<br><br>
-Confira o resultado do projeto <a href="https://luckasmatos-netflixcover.netlify.app/"{:target="_blank"}>AQUI</a>.</h4>
+Confira o resultado do projeto <a href="https://luckasmatos-netflixcover.netlify.app/" target="_blank">AQUI</a>.</h4>
 <br>
 <h3 align="center">Aplicação em Desktop:</h2>
 <p align="center">
